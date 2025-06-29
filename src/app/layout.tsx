@@ -60,7 +60,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${outfit.variable}`}>
         <main
           className={cn(
-            "flex  relative  break-words h-dvh min-h-screen items-center justify-between pt-14 pb-4 px-40 max-md:p-4 bg-transparent max-sm:pt-20",
+            "flex relative break-words min-h-screen items-center justify-between pt-14 pb-4 px-40 max-md:p-4 bg-transparent max-sm:pt-20 overflow-y-auto",
             { "bg-white": "#E6E7EB" }
           )}
         >

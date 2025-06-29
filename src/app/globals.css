@@ -92,6 +92,34 @@
         #f1f5f9 80%,
         #ffffff 100%);
     min-height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  /* Custom Scrollbar Styles */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary-sky));
+    border-radius: 4px;
+    transition: background 0.2s ease;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary));
+  }
+
+  /* Firefox scrollbar */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--primary-sky)) hsl(var(--muted));
   }
 
   .dark body {
@@ -137,6 +165,44 @@
   background-color: hsl(var(--primary-sky));
   outline: 3px solid hsl(var(--primary));
   box-shadow: 0 2px 5px 2px hsl(var(--primary-sky));
+}
+
+/* Scroll Container Classes */
+.scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--primary-sky)) transparent;
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary-sky));
+  border-radius: 3px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
+
+/* Smooth scroll behavior for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar but keep functionality */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 /* TEXT ROTATOR STYLES  */

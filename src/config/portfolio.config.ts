@@ -18,7 +18,7 @@ export const portfolioConfig = {
 
   // SEO Information
   seo: {
-    ogImage: "/og-image.png",
+    ogImage: "https://www.abdullahalabid.in//og-image.png",
     url: "https://www.abdullahalabid.in/", // This will be your actual Vercel URL
     twitterHandle: "@abid_0306",
     keywords: [

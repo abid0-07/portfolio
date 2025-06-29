@@ -82,7 +82,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed top-5 right-0 left-0 px-0 sm:px-5 m-auto w-full sm:w-fit bg-transparent z-[+9999999] ${scrolling ? "hidden" : "block"}`}
+      className={`fixed top-5 right-0 left-0 px-0 sm:px-5 m-auto w-full sm:w-fit bg-transparent z-[+9999999] transition-all duration-300 ${scrolling ? "translate-y-[-100px] opacity-0" : "translate-y-0 opacity-100"}`}
     >
       <Dock className="items-end pb-3 rounded-full">
         {data.map((item, idx) => (
