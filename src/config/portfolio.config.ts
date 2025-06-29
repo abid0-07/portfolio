@@ -129,14 +129,14 @@ export const portfolioConfig = {
         name: "Next.js",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
       },
+        {
+          name: "Node JS",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+        },
       {
         name: "DotNet Core",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg",
       },
-      //   {
-      //     name: "Svelte",
-      //     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg",
-      //   },
       {
         name: "Tailwind CSS",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
@@ -322,8 +322,8 @@ export const portfolioConfig = {
     {
       title: "Hashnode",
       description:
-        "I write blogs on web development, trending tech stacks or javascript guide or tips in Hashnode",
-      link: "https://mdtaquiimam.hashnode.dev/",
+        "I write blogs on web development,machine learning trending tech stacks or javascript guide or tips in Hashnode",
+      link: "https://hashnode.com/@abdullahalabid",
     },
     // {
     //   title: "Medium",
@@ -333,9 +333,8 @@ export const portfolioConfig = {
     // },
     {
       title: "Daily.Dev",
-      description:
-        "I am also the member of Daily Dev squads and i also upload post on some squads.",
-      link: "https://app.daily.dev/taqui_786",
+      description: "I am also the member of Daily Dev squads.",
+      link: "https://app.daily.dev/abdullahalabid",
     },
     // {
     //   title: "Gumroad",
