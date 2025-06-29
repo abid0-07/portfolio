@@ -19,7 +19,7 @@ const contactPage = () => {
             <ContactForm />
           </FramerWrapper>
         </div>
-        <p className=" font-poppins text-lg w-full text-primary max-sm:text-base"></p>
+        <p className=" font-inter text-lg w-full text-primary max-sm:text-base"></p>
       </div>
     </div>
   );

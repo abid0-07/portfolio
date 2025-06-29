@@ -22,7 +22,7 @@ const page = () => {
         </Heading>
 
         <FramerWrapper y={0} x={100}>
-          <p className=" font-poppins text-xl w-full text-primary max-sm:text-lg ">
+          <p className=" font-inter text-xl w-full text-primary max-sm:text-lg ">
             {portfolioConfig.about.bio}
           </p>
         </FramerWrapper>
@@ -35,7 +35,7 @@ const page = () => {
         <Aboutfooter />
       </FramerWrapper>
       <FramerWrapper className="block" y={100} delay={0.31}>
-        <h1 className="gap-2 text-3xl font-poppins text-primary font-semibold flex icon_underline relative max-sm:text-2xl">
+        <h1 className="gap-2 text-3xl font-outfit text-primary font-semibold flex icon_underline relative max-sm:text-2xl">
           {" "}
           <Heart className="h-8 w-8" /> Hobbies
         </h1>

@@ -1,20 +1,21 @@
+import { desc } from "framer-motion/client";
+
 export const portfolioConfig = {
   // Basic Information
-  name: "Md Taqui Imam",
+  name: "Abdullah Al Abid",
   title: "Software Engineer",
   description: "I am a Passionate Software Developer",
-  location: "Ramgarh cantt, Jharkhand, India",
+  location: "Dhaka, Bangladesh",
 
   // Contact Information
-  email: "taquiimam@example.com", // Replace with actual email if available
+  email: "abdullah.abid.se@gmail.com", // Replace with actual email if available
 
   // Social Media Links
   socialLinks: {
-    facebook: "https://www.facebook.com/shahina.khatun.1044",
-    twitter: "https://twitter.com/Taquiimam14",
-    linkedin: "https://www.linkedin.com/in/taqui-imam",
-    external: "https://tinyurl.com/MdTaquiImam",
-    github: "https://github.com/taqui-786", // Assuming this is the GitHub link
+    facebook: "https://www.facebook.com/abdullahal.abid.12/",
+    twitter: "https://x.com/abid_0306",
+    linkedin: "https://www.linkedin.com/in/alabid/",
+    github: "https://github.com/abid0-07", // Assuming this is the GitHub link
   },
 
   // SEO Information
@@ -54,25 +55,26 @@ export const portfolioConfig = {
     ],
     authors: [
       {
-        name: "Taqui Imam",
-        url: "https://github.com/taqui-786",
+        name: "Abdullah Al Abid",
+        url: "https://github.com/abid0-07",
       },
     ],
   },
 
   // About Information
   about: {
-    bio: "I am a Full Stack Web Developer from Ramgarh cantt, Jharkhand, India. I'm passionate about crafting web projects and contributing to open-source communities. I specialize in modern JavaScript frameworks and responsive CSS design, focusing on creating pixel-perfect, user-friendly interfaces. With strong attention to detail and efficient delivery, I build seamless web experiences that combine functionality with elegant design.",
+    bio: "I am a Full Stack Web Developer, ML Enthusiast and Researcher from Dhaka, Bangladesh. I'm passionate about crafting web projects and contributing to communities. I specialize in modern JavaScript frameworks and responsive CSS design, focusing on creating user-friendly interfaces. With strong attention to detail and efficient delivery, I build seamless web experiences that combine functionality with elegant design.",
     hobbies: [
       "Coding",
       "Playing Games",
       "Watching Anime",
-      "Tech Blog Writing",
-      "Creating Cool Projects",
+      "Reading/Writing Tech Blogs",
+      "Reading Books",
+      "Creating Projects",
     ],
     personalInfo: {
       language: "English UK",
-      nationality: "India",
+      nationality: "Bangladeshi",
       gender: "Male",
     },
   },
@@ -80,12 +82,12 @@ export const portfolioConfig = {
   // Skills and Roles
   skills: {
     roles: [
-      "Freelancer",
-      "Blogger",
+      "Student",
+      "Researcher",
       "Gamer",
       "Creator",
-      "Student",
-      "Contributer",
+      "Developer",
+      "Contributor",
     ],
     // Technical Skills
     programmingLanguages: [
@@ -106,8 +108,8 @@ export const portfolioConfig = {
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
       },
       {
-        name: "C++",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+        name: "C#",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
       },
       {
         name: "Python",
@@ -128,13 +130,13 @@ export const portfolioConfig = {
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
       },
       {
-        name: "Vue.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+        name: "DotNet Core",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg",
       },
-      {
-        name: "Svelte",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg",
-      },
+      //   {
+      //     name: "Svelte",
+      //     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg",
+      //   },
       {
         name: "Tailwind CSS",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
@@ -162,13 +164,13 @@ export const portfolioConfig = {
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
       },
       {
-        name: "Docker",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+        name: "Prisma",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
       },
-      {
-        name: "Firebase",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-      },
+      //   {
+      //     name: "Firebase",
+      //     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+      //   },
       {
         name: "MongoDB",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
@@ -183,141 +185,170 @@ export const portfolioConfig = {
   // Education Information
   education: [
     {
-      degree: "Bachelor of Computer Application",
-      institution: "Ranchi University Jharkhand",
-      location: "Doranda College Ranchi",
-      period: "July 2023 - 2026",
+      degree: "Bachelor of Software Engineering",
+      institution: "Daffodil International University",
+      location: "Daffodil Smart City, Birulia, Savar, Dhaka, Bangladesh",
+      period: "July 2021 - 2025",
       description:
-        "I am currently Studying Bachelor of Computer Application form Doranda College Ranchi a Goverment College of Ranchi. The program has provided me with a well-rounded education, covering both theoretical foundations and practical applications of computer science.",
+        "I am currently Studying Bachelor of Software Engineering form Daffodil International University, one of the leading private university of Bangladesh. The program has provided me with a well-rounded education, covering both theoretical foundations and practical applications of Software Engineering.",
     },
   ],
 
   // Projects Information
   projects: [
     {
-      title: "WePost- A modern, minimalistic social platform.",
+      title: "Online Shop",
       description:
-        "WePost is a modern, minimalistic social platform for sharing posts, like, follow, and engaging in comments etc.",
-      tags: ["Tanstack-Query", "PostgreSQL", "Shadcn Ui", "Nextjs"],
-      link: "https://we-post-dev.vercel.app",
+        "A minimal online shop app with product listing, cart, and checkout features.",
+      tags: ["Node.js, Express", "MongoDB"],
+      link: "https://github.com/abid0-07/online-shop",
     },
     {
-      title: "Devzone- A community chat app for devs",
+      title: "Utshobkotha",
       description:
-        "DevZone is the ultimate chat platform for developers to connect, collaborate, and code together. Join the conversation and level up your coding journey.",
-      tags: ["Zustand", "Supabase", "Shadcn Ui", "Nextjs"],
-      link: "https://devzone-ti.vercel.app/",
+        "An event management platform for organizing and managing events.",
+      tags: ["Next.js", "Tailwind CSS"],
+      link: "https://github.com/abid0-07/utshobkotha",
     },
     {
-      title: "itZmyLink- One Page many Links",
+      title: "Data Science Project",
       description:
-        "itZmyLink is a simple platform where user can create a personalized page to showcase all your social media profiles in one place. ",
-      tags: ["Nextjs", "Typescript", "Shadcn Ui"],
-      link: "https://github.com/taqui-786/itZmyLink",
+        "Collected data from online sources and performed data analysis.",
+      tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+      link: "https://github.com/abid0-07/Applied-Data-Science-Capston-Project",
     },
     {
-      title: "GitEstimate- Github estimate worth generator",
+      title: "Job Posting Analysis",
       description:
-        "GitEstimate is a simple fun tool where user can generate their github estimate worth card just by entering their github username. ",
-      tags: ["Nextjs", "Typescript", "Shadcn Ui"],
-      link: "https://github.com/taqui-786/GitEstimate",
+        "Collected data from job posting websites and performed analysis.",
+      tags: ["Python", "Pandas", "NumPy", "Google Locker"],
+      link: "https://github.com/abid0-07/IBM-data-analyst",
     },
-    {
-      title: "Mixcn-ui- Reusable components for Nextjs",
-      description:
-        "This is Nextjs app with a Collection of Nextjs Components - (Currently under Devlelopment) ",
-      tags: ["Nextjs", "Shadcnui", "Npx", "Library"],
-      link: "https://mixcn-ui.vercel.app",
-    },
-    {
-      title: "Rupeespot- All deals Product in one place",
-      description:
-        "This is a free tool to check price history charts for millions of products for popular Indian stores such as Amazon and Flipkart. ",
-      tags: ["Nextjs", "Freelancing", "MySQL"],
-      link: "https://rupeespot.com/",
-    },
-    {
-      title: "Formcraft- Build Type-Safe Forms with Zero Effort",
-      description:
-        "Create production-ready forms with Zod validation, React Hook Form, and TypeScript. Design, customize, and deploy in minutes.",
-      tags: ["Nextjs", "Shadcnui", "Zod", "React Hook Form "],
-      link: "https://formcraft-ti.vercel.app/",
-    },
-    {
-      title: "KryptoKapital- Investing in Cryptocurreny",
-      description:
-        "This is a platform for learning about cryptocurrency with many tools and festures. It is very big project. ",
-      tags: ["Nextjs", "Freelancing", "Supabase"],
-      link: "https://pro.kryptokapital.info/",
-    },
-    {
-      title: "FriendZ - A social media Platform",
-      description:
-        "FriendZ is a social media app made with modern tech stacks such as redis, Authjs etc. A user can Create, delete, like, comment Post. ",
-      tags: ["Redis", "Authjs", "Typescript", "Nextjs"],
-      link: "https://github.com/taqui-786/project-friendz",
-    },
-    {
-      title: "ChatApp- Simple instagram clone",
-      description:
-        "ChatApp is similar to instagram, you can create, edit, delete, like,comment, post and  Follow, unfollow users",
-      tags: ["Reactjs", "Javascript"],
-      link: "https://github.com/taqui-786/chatapp-api",
-    },
-    {
-      title: "Devletter - A Newsletter for devs",
-      description:
-        "Devletter ia a newsletter subscribing single page app made with Nextjs and Tailwindcss.",
-      tags: ["Nextjs", "Tailwindcss"],
-      link: "https://github.com/taqui-786/Devletter",
-    },
-    {
-      title: "CrouMaker - A Crousal Maker App",
-      description:
-        "Crousal Maker is a tool with in-built crousals templates edit and download it in any format.",
-      tags: ["Nextjs", "jsPDF", "html2canvas", "Shadcn Ui"],
-      link: "https://github.com/taqui-786/crousal-maker",
-    },
+
+    // {
+    //   title: "WePost- A modern, minimalistic social platform.",
+    //   description:
+    //     "WePost is a modern, minimalistic social platform for sharing posts, like, follow, and engaging in comments etc.",
+    //   tags: ["Tanstack-Query", "PostgreSQL", "Shadcn Ui", "Nextjs"],
+    //   link: "https://we-post-dev.vercel.app",
+    // },
+    // {
+    //   title: "Devzone- A community chat app for devs",
+    //   description:
+    //     "DevZone is the ultimate chat platform for developers to connect, collaborate, and code together. Join the conversation and level up your coding journey.",
+    //   tags: ["Zustand", "Supabase", "Shadcn Ui", "Nextjs"],
+    //   link: "https://devzone-ti.vercel.app/",
+    // },
+    // {
+    //   title: "itZmyLink- One Page many Links",
+    //   description:
+    //     "itZmyLink is a simple platform where user can create a personalized page to showcase all your social media profiles in one place. ",
+    //   tags: ["Nextjs", "Typescript", "Shadcn Ui"],
+    //   link: "https://github.com/taqui-786/itZmyLink",
+    // },
+    // {
+    //   title: "GitEstimate- Github estimate worth generator",
+    //   description:
+    //     "GitEstimate is a simple fun tool where user can generate their github estimate worth card just by entering their github username. ",
+    //   tags: ["Nextjs", "Typescript", "Shadcn Ui"],
+    //   link: "https://github.com/taqui-786/GitEstimate",
+    // },
+    // {
+    //   title: "Mixcn-ui- Reusable components for Nextjs",
+    //   description:
+    //     "This is Nextjs app with a Collection of Nextjs Components - (Currently under Devlelopment) ",
+    //   tags: ["Nextjs", "Shadcnui", "Npx", "Library"],
+    //   link: "https://mixcn-ui.vercel.app",
+    // },
+    // {
+    //   title: "Rupeespot- All deals Product in one place",
+    //   description:
+    //     "This is a free tool to check price history charts for millions of products for popular Indian stores such as Amazon and Flipkart. ",
+    //   tags: ["Nextjs", "Freelancing", "MySQL"],
+    //   link: "https://rupeespot.com/",
+    // },
+    // {
+    //   title: "Formcraft- Build Type-Safe Forms with Zero Effort",
+    //   description:
+    //     "Create production-ready forms with Zod validation, React Hook Form, and TypeScript. Design, customize, and deploy in minutes.",
+    //   tags: ["Nextjs", "Shadcnui", "Zod", "React Hook Form "],
+    //   link: "https://formcraft-ti.vercel.app/",
+    // },
+    // {
+    //   title: "KryptoKapital- Investing in Cryptocurreny",
+    //   description:
+    //     "This is a platform for learning about cryptocurrency with many tools and festures. It is very big project. ",
+    //   tags: ["Nextjs", "Freelancing", "Supabase"],
+    //   link: "https://pro.kryptokapital.info/",
+    // },
+    // {
+    //   title: "FriendZ - A social media Platform",
+    //   description:
+    //     "FriendZ is a social media app made with modern tech stacks such as redis, Authjs etc. A user can Create, delete, like, comment Post. ",
+    //   tags: ["Redis", "Authjs", "Typescript", "Nextjs"],
+    //   link: "https://github.com/taqui-786/project-friendz",
+    // },
+    // {
+    //   title: "ChatApp- Simple instagram clone",
+    //   description:
+    //     "ChatApp is similar to instagram, you can create, edit, delete, like,comment, post and  Follow, unfollow users",
+    //   tags: ["Reactjs", "Javascript"],
+    //   link: "https://github.com/taqui-786/chatapp-api",
+    // },
+    // {
+    //   title: "Devletter - A Newsletter for devs",
+    //   description:
+    //     "Devletter ia a newsletter subscribing single page app made with Nextjs and Tailwindcss.",
+    //   tags: ["Nextjs", "Tailwindcss"],
+    //   link: "https://github.com/taqui-786/Devletter",
+    // },
+    // {
+    //   title: "CrouMaker - A Crousal Maker App",
+    //   description:
+    //     "Crousal Maker is a tool with in-built crousals templates edit and download it in any format.",
+    //   tags: ["Nextjs", "jsPDF", "html2canvas", "Shadcn Ui"],
+    //   link: "https://github.com/taqui-786/crousal-maker",
+    // },
   ],
 
   // More Links Information
   moreLinks: [
-    {
-      title: "Dev.to",
-      description:
-        "I write blogs on web development, trending tech stacks or javascript guide or tips in Dev.to ",
-      link: "https://dev.to/random_ti",
-    },
+    // {
+    //   title: "Dev.to",
+    //   description:
+    //     "I write blogs on web development, trending tech stacks or javascript guide or tips in Dev.to ",
+    //   link: "https://dev.to/random_ti",
+    // },
     {
       title: "Hashnode",
       description:
         "I write blogs on web development, trending tech stacks or javascript guide or tips in Hashnode",
       link: "https://mdtaquiimam.hashnode.dev/",
     },
-    {
-      title: "Medium",
-      description:
-        "I write blogs on web development, trending tech stacks or javascript guide or tips in Medium",
-      link: "https://medium.com/@mdtaqui.jhar",
-    },
+    // {
+    //   title: "Medium",
+    //   description:
+    //     "I write blogs on web development, trending tech stacks or javascript guide or tips in Medium",
+    //   link: "https://medium.com/@mdtaqui.jhar",
+    // },
     {
       title: "Daily.Dev",
       description:
         "I am also the member of Daily Dev squads and i also upload post on some squads.",
       link: "https://app.daily.dev/taqui_786",
     },
-    {
-      title: "Gumroad",
-      description:
-        "I also sell digital products on gumroad like Notion Templates and web projects etc.",
-      link: "https://mdtaquijhar.gumroad.com/",
-    },
-    {
-      title: "Buy Me a coffee",
-      description:
-        "Supports my content quality, new topics, and project creation.",
-      link: "https://www.buymeacoffee.com/taquidevloper",
-    },
+    // {
+    //   title: "Gumroad",
+    //   description:
+    //     "I also sell digital products on gumroad like Notion Templates and web projects etc.",
+    //   link: "https://mdtaquijhar.gumroad.com/",
+    // },
+    // {
+    //   title: "Buy Me a coffee",
+    //   description:
+    //     "Supports my content quality, new topics, and project creation.",
+    //   link: "https://www.buymeacoffee.com/taquidevloper",
+    // },
   ],
 
   // API Keys (should be in .env but referenced here)

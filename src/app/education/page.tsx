@@ -22,7 +22,7 @@ const educationPage = () => {
               y={0}
               x={-100}
               delay={0.35 + index * 0.1}
-              className="w-1/4 font-rubik flex items-center justify-evenly text-lg max-sm:text-base"
+              className="w-1/4 font-outfit flex items-center justify-evenly text-lg max-sm:text-base font-semibold"
             >
               {edu.period}
             </FramerWrapper>
@@ -32,10 +32,10 @@ const educationPage = () => {
               delay={0.35 + index * 0.1}
               className="relative w-3/4 border-l-4 border-l-[#3c3c3c] p-4 gap-3 education_point"
             >
-              <div className="text-2xl font-rubik max-sm:text-xl">
+              <div className="text-2xl font-outfit max-sm:text-xl font-bold">
                 {edu.degree}, <br /> {edu.institution}
               </div>
-              <p className="font-poppins text-base w-full text-primary max-sm:text-xs">
+              <p className="font-inter text-base w-full text-primary max-sm:text-xs">
                 {edu.description}
               </p>
             </FramerWrapper>

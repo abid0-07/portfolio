@@ -28,11 +28,11 @@ const SocialLinks = () => {
       link: portfolioConfig.socialLinks.linkedin,
       icon: <Linkedin />,
     },
-    {
-      name: "External",
-      link: portfolioConfig.socialLinks.external,
-      icon: <ExternalLink />,
-    },
+    // {
+    //   name: "External",
+    //   link: portfolioConfig.socialLinks.external,
+    //   icon: <ExternalLink />,
+    // },
     {
       name: "Github",
       link: portfolioConfig.socialLinks.github,
