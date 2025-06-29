@@ -1,5 +1,3 @@
-import { desc } from "framer-motion/client";
-
 export const portfolioConfig = {
   // Basic Information
   name: "Abdullah Al Abid",
@@ -20,8 +18,8 @@ export const portfolioConfig = {
 
   // SEO Information
   seo: {
-    ogImage: "https://mdtaquiimam.vercel.app/og-image.png",
-    url: "https://mdtaquiimam.vercel.app",
+    ogImage: "/og-image.png",
+    url: "https://abdullah-portfolio.vercel.app", // This will be your actual Vercel URL
     twitterHandle: "@abid_0306",
     keywords: [
       "Abdullah Al Abid",

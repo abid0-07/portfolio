@@ -1,11 +1,5 @@
 import { cn } from "@/lib/utils";
-import {
-  Facebook,
-  Linkedin,
-  Twitter,
-  ExternalLink,
-  Github,
-} from "lucide-react";
+import { Facebook, Linkedin, Twitter, Github } from "lucide-react";
 import { buttonVariants } from "./ui/button";
 import Link from "next/link";
 import FramerWrapper from "./animation/FramerWrapper";
