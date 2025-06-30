@@ -7,9 +7,9 @@ import { portfolioConfig } from "@/config/portfolio.config";
 const educationPage = () => {
   return (
     // ABOUT PAGE
-    <div className="h-full w-full relative flex flex-col items-start gap-5 overflow-hidden">
-      <Badge variant="secondary" className="gap-1.5 py-1 ">
-        <Briefcase className="h-4 w-4" />
+    <div className="h-full w-full relative flex flex-col items-start gap-5 overflow-hidden px-4 max-sm:px-2">
+      <Badge variant="secondary" className="gap-1.5 py-1 max-sm:text-xs">
+        <Briefcase className="h-4 w-4 max-sm:h-3 max-sm:w-3" />
         Education
       </Badge>
       <div className="flex flex-col gap-3">
@@ -17,12 +17,15 @@ const educationPage = () => {
       </div>
       <div className="w-full h-fit flex flex-col">
         {portfolioConfig.education.map((edu, index) => (
-          <div className="w-full h-fit flex" key={index}>
+          <div
+            className="w-full h-fit flex max-sm:flex-col max-sm:gap-2"
+            key={index}
+          >
             <FramerWrapper
               y={0}
               x={-100}
               delay={0.35 + index * 0.1}
-              className="w-1/4 font-outfit flex items-center justify-evenly text-lg max-sm:text-base font-semibold"
+              className="w-1/4 max-sm:w-full font-outfit flex items-center justify-evenly max-sm:justify-start text-lg max-sm:text-base font-semibold"
             >
               {edu.period}
             </FramerWrapper>
@@ -30,12 +33,12 @@ const educationPage = () => {
               y={0}
               x={100}
               delay={0.35 + index * 0.1}
-              className="relative w-3/4 border-l-4 border-l-[#3c3c3c] p-4 gap-3 education_point"
+              className="relative w-3/4 max-sm:w-full border-l-4 max-sm:border-l-2 border-l-[#3c3c3c] p-4 max-sm:p-3 gap-3 education_point"
             >
               <div className="text-2xl font-outfit max-sm:text-xl font-bold">
                 {edu.degree}, <br /> {edu.institution}
               </div>
-              <p className="font-inter text-base w-full text-primary max-sm:text-xs">
+              <p className="font-inter text-base w-full text-primary max-sm:text-sm max-sm:leading-5">
                 {edu.description}
               </p>
             </FramerWrapper>

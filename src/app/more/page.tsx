@@ -17,15 +17,15 @@ import { portfolioConfig } from "@/config/portfolio.config";
 const morePage = () => {
   return (
     // ABOUT PAGE
-    <div className="h-full w-full relative flex flex-col items-start gap-5 overflow-hidden">
-      <Badge variant="secondary" className="gap-1.5 py-1 ">
-        <PackagePlus className="h-4 w-4" />
+    <div className="h-full w-full relative flex flex-col items-start gap-5 overflow-hidden px-4 max-sm:px-2">
+      <Badge variant="secondary" className="gap-1.5 py-1 max-sm:text-xs">
+        <PackagePlus className="h-4 w-4 max-sm:h-3 max-sm:w-3" />
         More
       </Badge>
       <div className="flex flex-col gap-3">
         <Heading>More</Heading>
       </div>
-      <div className="h-auto w-full flex flex-wrap gap-3 p-2">
+      <div className="h-auto w-full flex flex-wrap gap-3 max-sm:gap-2 p-2 max-sm:p-1">
         {portfolioConfig.moreLinks.map((value, indx) => {
           return (
             <FramerWrapper
@@ -36,24 +36,28 @@ const morePage = () => {
               delay={indx / 4}
               duration={0.15}
             >
-              <Card className="w-full">
-                <CardHeader>
-                  <CardTitle>{value.title}</CardTitle>
+              <Card className="w-full max-sm:text-sm">
+                <CardHeader className="max-sm:pb-4">
+                  <CardTitle className="max-sm:text-base">
+                    {value.title}
+                  </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-base font-inter ">{value.description}</p>
+                <CardContent className="max-sm:py-2">
+                  <p className="text-base font-inter max-sm:text-sm">
+                    {value.description}
+                  </p>
                 </CardContent>
-                <CardFooter>
+                <CardFooter className="max-sm:pt-2">
                   <Link
                     href={value.link}
                     target="blank"
                     className={cn(
                       buttonVariants({ variant: "default", size: "lg" }),
-                      "w-full gap-3"
+                      "w-full gap-3 max-sm:text-sm max-sm:py-2 max-sm:gap-2"
                     )}
                   >
                     {" "}
-                    <ExternalLink />
+                    <ExternalLink className="max-sm:h-3 max-sm:w-3" />
                     Visit here
                   </Link>
                 </CardFooter>

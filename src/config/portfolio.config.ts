@@ -103,6 +103,10 @@ export const portfolioConfig = {
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
       },
       {
+        name: "C++",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+      },
+      {
         name: "C#",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
       },
@@ -155,17 +159,21 @@ export const portfolioConfig = {
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
       },
       {
+        name: "Tortoise Git",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tortoisegit/tortoisegit-original.svg",
+      },
+      {
         name: "VS Code",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+      },
+      {
+        name: "Ubuntu",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg",
       },
       {
         name: "Prisma",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
       },
-      //   {
-      //     name: "Firebase",
-      //     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-      //   },
       {
         name: "MongoDB",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
@@ -173,6 +181,44 @@ export const portfolioConfig = {
       {
         name: "PostgreSQL",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+      },
+      {
+        name: "Postman",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+      },
+    ],
+    ml: [
+      {
+        name: "Tensorflow",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg",
+      },
+      {
+        name: "keras",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg",
+      },
+      {
+        name: "Anaconda",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/anaconda/anaconda-original.svg",
+      },
+      {
+        name: "Jupyter",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg",
+      },
+      {
+        name: "Kaggle",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kaggle/kaggle-original.svg",
+      },
+      {
+        name: "Power Bi",
+        icon: "/power bi.png", // a local icon for Power BI
+      },
+      {
+        name: "Google Locker Studio",
+        icon: "/google looker.png", // a local icon for google looker
+      },
+      {
+        name: "Google Colab",
+        icon: "/colab.svg", // a local icon for google looker
       },
     ],
   },
@@ -186,6 +232,109 @@ export const portfolioConfig = {
       period: "July 2021 - 2025",
       description:
         "I am currently Studying Bachelor of Software Engineering form Daffodil International University, one of the leading private university of Bangladesh. The program has provided me with a well-rounded education, covering both theoretical foundations and practical applications of Software Engineering.",
+    },
+  ],
+
+  // Certificates Information
+  certificates: [
+    {
+      title: "IBM Data Science",
+      issuer: "IBM",
+      issueDate: "2023",
+      description:
+        "Completed comprehensive professional course of 10 courses with a capstone project involving real-world data science applications and analysis.",
+      credentialUrl:
+        "https://www.coursera.org/account/accomplishments/professional-cert/PGETC7752RBN",
+      skills: [
+        "Data Science",
+        "Python",
+        "Data Visualization",
+        "Data Analysis",
+        "SQL",
+        "Machine Learning",
+      ],
+    },
+    {
+      title: "IBM Data Analyst",
+      issuer: "IBM",
+      issueDate: "2024",
+      description:
+        "Comprehensive program with 9 courses covering data analysis techniques, visualization, and business intelligence.",
+      credentialUrl:
+        "https://www.coursera.org/account/accomplishments/professional-cert/5JS2789LJBUE",
+      skills: [
+        "Data Analysis",
+        "SQL",
+        "Python",
+        "Power BI",
+        "Excel",
+        "Cognos Analytics",
+        "Data Visualization",
+      ],
+    },
+    {
+      title: "Machine Learning",
+      issuer: "DeepLearning.ai",
+      issueDate: "2024",
+      description:
+        "Comprehensive course covering Supervised Learning, Unsupervised Learning, and Reinforcement Learning.",
+      credentialUrl:
+        "https://www.coursera.org/account/accomplishments/specialization/54PSPZMDV9TF",
+      skills: [
+        "Python",
+        "Supervised ML Algorithms",
+        "Unsupervised ML Algorithms",
+        "Reinforcement Learning",
+      ],
+    },
+    {
+      title: "Deep Learning",
+      issuer: "DeepLearning.ai",
+      issueDate: "2024",
+      description:
+        "Comprehensive course covering Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Generative Adversarial Network and optimization.",
+      credentialUrl:
+        "https://www.coursera.org/account/accomplishments/specialization/L2MF2U97QZCN",
+      skills: ["Neural Network", "Optimization"],
+    },
+    {
+      title: "Full Stack Developer",
+      issuer: "Microsoft",
+      issueDate: "Ongoing",
+      description:
+        "Comprehensive course basic to advanced concepts of full stack development, including front-end and back-end technologies in C# and ASP.NET.",
+      credentialUrl:
+        "https://university.mongodb.com/course_completion/your-certificate-id",
+      skills: [
+        "C#",
+        "ASP.NET",
+        "Blazor",
+        "Database",
+        "Optimization",
+        "Scalability",
+        "Data Structure",
+        "Algorithms",
+        "Deployment",
+        "DevOps",
+      ],
+    },
+    {
+      title: "IBM Full-Stack JavaScript Developer Professional Certificate",
+      issuer: "IBM",
+      issueDate: "Ongoing",
+      description:
+        "full-stack development skills like React, Node.js, and DevOps to build and deploy cloud-native applications",
+      credentialUrl:
+        "https://university.mongodb.com/course_completion/your-certificate-id",
+      skills: [
+        "React",
+        "JavaScript",
+        "Node.js",
+        "DevOps",
+        "Docker",
+        "Kubernetes",
+        "NoSQL",
+      ],
     },
   ],
 

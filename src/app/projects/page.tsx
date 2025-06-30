@@ -8,9 +8,9 @@ import { portfolioConfig } from "@/config/portfolio.config";
 const projectsPage = () => {
   return (
     // PROJECT PAGE
-    <div className="h-full w-full relative flex flex-col items-start gap-5 overflow-hidden">
-      <Badge variant="secondary" className="gap-1.5 py-1 ">
-        <Layers className="h-4 w-4" />
+    <div className="h-full w-full relative flex flex-col items-start gap-5 overflow-hidden px-4 max-sm:px-2">
+      <Badge variant="secondary" className="gap-1.5 py-1 max-sm:text-xs">
+        <Layers className="h-4 w-4 max-sm:h-3 max-sm:w-3" />
         Projects
       </Badge>
       <div className="flex flex-col gap-3">
@@ -26,7 +26,7 @@ const projectsPage = () => {
         </FramerWrapper>
       </div>
 
-      <div className=" w-full flex flex-row flex-wrap gap-3 max-lg:flex-col">
+      <div className=" w-full flex flex-row flex-wrap gap-3 max-lg:flex-col max-sm:gap-4">
         {portfolioConfig.projects.map((val, indx) => {
           return <ProjectCards key={indx} value={val} num={indx} />;
         })}

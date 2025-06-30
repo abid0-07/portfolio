@@ -16,8 +16,13 @@ const ScrollContainer: React.FC<ScrollContainerProps> = ({
 }) => {
   const [isScrollable, setIsScrollable] = useState(false);
   const [scrollPercentage, setScrollPercentage] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    const checkDevice = () => {
+      setIsMobile(window.innerWidth <= 640);
+    };
+
     const checkScrollable = () => {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
@@ -33,11 +38,15 @@ const ScrollContainer: React.FC<ScrollContainerProps> = ({
       setScrollPercentage(scrollPercent);
     };
 
+    checkDevice();
     checkScrollable();
     handleScroll();
 
     window.addEventListener("scroll", handleScroll);
-    window.addEventListener("resize", checkScrollable);
+    window.addEventListener("resize", () => {
+      checkDevice();
+      checkScrollable();
+    });
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -60,19 +69,26 @@ const ScrollContainer: React.FC<ScrollContainerProps> = ({
       {/* Main Content Container */}
       <div
         className={cn(
-          "w-full h-full",
+          "w-full h-full scroll-container page-transition",
           isScrollable && "overflow-y-auto",
+          isMobile && "scroll-smooth",
           className
         )}
+        style={{
+          WebkitOverflowScrolling: "touch",
+          scrollBehavior: "smooth",
+        }}
       >
         {children}
       </div>
 
-      {/* Scroll to Top Button */}
+      {/* Scroll to Top Button - Back to normal position since no bottom nav */}
       {isScrollable && scrollPercentage > 20 && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="fixed bottom-6 right-6 z-50 p-3 bg-primary text-primary-foreground rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
+          className={cn(
+            "fixed bottom-6 right-6 z-50 p-3 bg-primary text-primary-foreground rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 mobile-nav-button"
+          )}
           aria-label="Scroll to top"
         >
           <svg

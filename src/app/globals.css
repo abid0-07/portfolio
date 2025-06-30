@@ -82,6 +82,14 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    /* Better mobile touch scrolling */
+    touch-action: pan-y;
+  }
+
   body {
     @apply bg-background text-foreground font-inter;
     background: linear-gradient(135deg,
@@ -94,6 +102,12 @@
     min-height: 100vh;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    /* Enable hardware acceleration for smoother scrolling */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    /* Better mobile scroll performance */
+    will-change: scroll-position;
   }
 
   /* Custom Scrollbar Styles */
@@ -239,5 +253,256 @@ html {
 
   100% {
     transform: translateY(-83.33%);
+  }
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 640px) {
+
+  /* Improve touch targets */
+  button,
+  a,
+  input,
+  textarea {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Better text readability on mobile */
+  body {
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Enhanced mobile scrolling */
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth !important;
+    -webkit-overflow-scrolling: touch !important;
+    /* Momentum scrolling for iOS Safari */
+    -webkit-scroll-behavior: smooth;
+    /* Reduce scroll lag and improve responsiveness */
+    will-change: scroll-position;
+  }
+
+  /* Prevent horizontal scroll */
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    /* Enhanced smooth scrolling properties */
+    scroll-behavior: smooth !important;
+    -webkit-overflow-scrolling: touch !important;
+    overscroll-behavior-y: contain;
+    overscroll-behavior-x: none;
+  }
+
+  /* Enable momentum scrolling on main element */
+  main {
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    /* Better scroll performance */
+    transform: translateZ(0);
+    will-change: scroll-position;
+  }
+
+  /* Better spacing for mobile cards */
+  .card-mobile {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Mobile-friendly animations */
+  .framer-motion-mobile {
+    transform: none !important;
+  }
+
+  /* Touch-friendly hover states */
+  .hover-mobile:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+
+  /* Prevent scroll momentum issues on iOS */
+  .scroll-container {
+    -webkit-overflow-scrolling: touch;
+    transform: translateZ(0);
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
+  }
+
+  /* Smooth page transitions */
+  .page-transition {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Improved touch responses */
+  .mobile-nav-button {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  /* Ensure smooth animations and scrolling on mobile */
+  * {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* Better scroll performance */
+    scroll-behavior: inherit;
+  }
+
+  /* Specific mobile viewport fixes */
+  html {
+    /* Fix for iOS Safari viewport issues */
+    -webkit-text-size-adjust: 100%;
+    /* Improve scrolling momentum */
+    scroll-behavior: smooth !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  /* Home page specific mobile optimizations */
+  .home-page-mobile {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+
+  /* Additional mobile scroll fixes */
+  .mobile-scroll-fix {
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    /* Prevent scroll lag */
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  /* Ensure buttons are touchable and visible */
+  button {
+    min-height: 44px;
+    /* iOS touch target minimum */
+    min-width: 44px;
+  }
+
+  /* Improve button visibility */
+  .download-btn {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  /* Prevent layout shifts on mobile */
+  .hero-container {
+    touch-action: manipulation;
+  }
+
+  /* Improve image display on mobile */
+  .hero-image {
+    max-height: 300px;
+    object-fit: contain;
+  }
+}
+
+/* Enhanced Mobile Dock Styles */
+@media (max-width: 640px) {
+
+  /* Ensure dock icons are properly sized and spaced on mobile */
+  .dock-mobile {
+    gap: 0.375rem;
+    /* 6px */
+    padding: 0.75rem;
+    /* 12px */
+  }
+
+  .dock-item-mobile {
+    min-width: 48px;
+    min-height: 48px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Improve dock label visibility on mobile */
+  .dock-label-mobile {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    white-space: nowrap;
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Mobile dock animations should be faster */
+  .dock-mobile * {
+    transition-duration: 0.2s !important;
+  }
+
+  /* Prevent dock from being too wide on small screens */
+  .dock-container-mobile {
+    max-width: calc(100vw - 1rem);
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .dock-container-mobile::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* High-DPI displays optimization */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx) {
+  .crisp-edges {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Dark mode mobile optimizations */
+@media (max-width: 640px) and (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(135deg,
+        #0f172a 0%,
+        #1e293b 20%,
+        #334155 40%,
+        #1e293b 60%,
+        #0f172a 80%,
+        #020617 100%);
+  }
+}
+
+/* Enhanced mobile button styling */
+@media (max-width: 640px) {
+
+  /* Ensure the download button is always visible and accessible */
+  .download-btn {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    position: relative;
+    z-index: 10;
+  }
+
+  .download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Ensure hero text and buttons don't get cut off */
+  .hero-content {
+    padding-bottom: 1rem;
+    min-height: fit-content;
+  }
+
+  /* Improve spacing for mobile layout */
+  .mobile-hero-spacing {
+    gap: 1.5rem;
+    padding: 0.5rem;
   }
 }

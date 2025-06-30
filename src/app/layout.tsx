@@ -56,11 +56,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} ${outfit.variable}`}>
         <main
           className={cn(
-            "flex relative break-words min-h-screen items-center justify-between pt-14 pb-4 px-40 max-md:p-4 bg-transparent max-sm:pt-20 overflow-y-auto",
+            "flex relative break-words min-h-screen items-start justify-between pt-14 pb-4 px-40 max-md:p-4 bg-transparent max-sm:pt-24 max-sm:pb-4 max-sm:px-4 max-sm:items-start",
             { "bg-white": "#E6E7EB" }
           )}
         >

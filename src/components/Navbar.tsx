@@ -9,6 +9,7 @@ import {
   Mail,
   MoreHorizontal,
   User,
+  Award,
 } from "lucide-react";
 
 import {
@@ -40,6 +41,11 @@ const Navbar = () => {
       href: "/skills",
     },
     {
+      title: "Certificates",
+      icon: <Award className="h-full w-full " />,
+      href: "/certificates",
+    },
+    {
       title: "Education",
       icon: <GraduationCap className="h-full w-full " />,
       href: "/education",
@@ -49,9 +55,8 @@ const Navbar = () => {
       icon: <FolderGit2 className="h-full w-full " />,
       href: "/projects",
     },
-
     {
-      title: "Contact us",
+      title: "Contact",
       icon: <Mail className="h-full w-full " />,
       href: "/contact",
     },
@@ -61,42 +66,70 @@ const Navbar = () => {
       href: "/more",
     },
   ];
+
   const [scrolling, setScrolling] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolling(true);
+      // On desktop, hide on scroll. On mobile, always show
+      if (window.innerWidth > 640) {
+        if (window.scrollY > 0) {
+          setScrolling(true);
+        } else {
+          setScrolling(false);
+        }
       } else {
-        setScrolling(false);
+        setScrolling(false); // Always show on mobile
       }
     };
 
+    handleScroll(); // Check initial state
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
     };
   }, []);
 
   return (
     <div
-      className={`fixed top-5 right-0 left-0 px-0 sm:px-5 m-auto w-full sm:w-fit bg-transparent z-[+9999999] transition-all duration-300 ${scrolling ? "translate-y-[-100px] opacity-0" : "translate-y-0 opacity-100"}`}
+      className={cn(
+        "fixed left-1/2 transform -translate-x-1/2 px-2 sm:px-5 w-[95%] sm:w-fit bg-transparent z-[9999999] transition-all duration-300",
+        // Desktop positioning and behavior
+        "sm:top-3",
+        !scrolling
+          ? "sm:translate-y-0 sm:opacity-100"
+          : "sm:translate-y-[-100px] sm:opacity-0",
+        // Mobile positioning - always fixed at top
+        "max-sm:top-2 max-sm:translate-y-0 max-sm:opacity-100 max-sm:dock-container-mobile"
+      )}
     >
-      <Dock className="items-end pb-3 rounded-full">
+      <Dock
+        className={cn(
+          "items-end pb-3 rounded-full max-sm:pb-2 max-sm:dock-mobile",
+          "max-sm:gap-1 max-sm:px-3"
+        )}
+      >
         {data.map((item, idx) => (
           <Link href={item.href} key={idx}>
             <DockItem
               className={cn(
-                "aspect-square rounded-full bg-gray-200 dark:bg-neutral-800",
+                "aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 max-sm:h-12 max-sm:w-12 max-sm:dock-item-mobile",
                 pathname === item.href &&
                   " bg-gray-100 !border !border-primary-sky"
               )}
             >
-              <DockLabel>{item.title}</DockLabel>
+              <DockLabel className="max-sm:text-xs max-sm:px-1 max-sm:py-1 max-sm:dock-label-mobile">
+                {item.title}
+              </DockLabel>
               <DockIcon
-                className={cn(pathname === item.href && "text-[#2f7df4]")}
+                className={cn(
+                  pathname === item.href && "text-[#2f7df4]",
+                  "max-sm:h-6 max-sm:w-6"
+                )}
               >
                 {item.icon}
               </DockIcon>
