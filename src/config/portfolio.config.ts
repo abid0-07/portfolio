@@ -1,5 +1,3 @@
-import { desc } from "framer-motion/client";
-
 export const portfolioConfig = {
   // Basic Information
   name: "Abdullah Al Abid",
