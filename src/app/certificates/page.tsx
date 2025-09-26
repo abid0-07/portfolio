@@ -3,16 +3,23 @@ import CertificatesCard from "@/components/CertificatesCard";
 import Heading from "@/components/Heading";
 import FramerWrapper from "@/components/animation/FramerWrapper";
 import ScrollContainer from "@/components/ScrollContainer";
+import { Badge } from "@/components/ui/badge";
+import { Book } from "lucide-react";
 
 const CertificatesPage = () => {
   return (
     <ScrollContainer>
       <div className="h-full w-full relative overflow-auto">
+        <Badge variant="secondary" className="gap-1.5 py-1 max-sm:text-xs">
+          <Book className="w-4 h-4 max-sm:w-3 max-sm:h-3" />
+          Certificates
+        </Badge>
         {/* Header */}
         <FramerWrapper y={0} scale={0.8}>
-          <div className="flex flex-col items-center justify-center py-8 max-sm:py-6 px-4 max-sm:px-2">
+          <div className="flex flex-col gap-3">
             <Heading>Certificates</Heading>
-            <div className="w-16 h-1 bg-blue-500 rounded-full mt-2 mb-6 max-sm:w-12 max-sm:mb-4"></div>
+          </div>
+          <div className="flex flex-col items-center justify-center py-8 max-sm:py-6 px-4 max-sm:px-2">
             <p className="text-lg text-gray-600 dark:text-gray-400 text-center max-w-2xl font-inter max-sm:text-base max-sm:max-w-sm">
               Professional certifications and achievements that showcase my
               commitment to continuous learning and skill development.

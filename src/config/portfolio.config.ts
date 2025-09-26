@@ -1,3 +1,5 @@
+import { desc } from "framer-motion/client";
+
 export const portfolioConfig = {
   // Basic Information
   name: "Abdullah Al Abid",
@@ -58,7 +60,7 @@ export const portfolioConfig = {
 
   // About Information
   about: {
-    bio: "I am a Full Stack Web Developer, ML Enthusiast and Researcher from Dhaka, Bangladesh. I'm passionate about crafting web projects and contributing to communities. I specialize in modern JavaScript frameworks and responsive CSS design, focusing on creating user-friendly interfaces. With strong attention to detail and efficient delivery, I build seamless web experiences that combine functionality with elegant design.",
+    bio: "I am a Full Stack Web Developer, ML & Cyber Security Enthusiast and Researcher from Dhaka, Bangladesh. I'm passionate about crafting web projects and contributing to communities. I specialize in modern JavaScript frameworks and responsive CSS design, focusing on creating user-friendly interfaces. With strong attention to detail and efficient delivery, I build seamless web experiences that combine functionality with elegant design.",
     hobbies: [
       "Coding",
       "Playing Games",
@@ -68,7 +70,7 @@ export const portfolioConfig = {
       "Creating Projects",
     ],
     personalInfo: {
-      language: "English UK",
+      language: "English, Bengali",
       nationality: "Bangladeshi",
       gender: "Male",
     },
@@ -232,6 +234,16 @@ export const portfolioConfig = {
       period: "July 2021 - 2025",
       description:
         "I am currently Studying Bachelor of Software Engineering form Daffodil International University, one of the leading private university of Bangladesh. The program has provided me with a well-rounded education, covering both theoretical foundations and practical applications of Software Engineering.",
+    },
+  ],
+
+  experience: [
+    {
+      company: "Nagad Ltd",
+      position: "Executive - Information Security",
+      period: "September 2025- Present",
+      description:
+        "Working as Executive - Information Security at Nagad Ltd. In this role, I am responsible for ensuring the security and integrity of the organization's information systems. My duties include monitoring network activity, conducting security assessments, and implementing security protocols to protect against cyber threats. I collaborate with cross-functional teams to develop and enforce security policies, provide training to staff on best practices, and respond to security incidents promptly. My goal is to safeguard sensitive data and maintain the trust of our customers and stakeholders.",
     },
   ],
 

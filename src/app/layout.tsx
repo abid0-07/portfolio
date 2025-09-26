@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import { portfolioConfig } from "@/config/portfolio.config";
+import Head from "next/head";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -57,6 +58,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body className={`${inter.variable} ${outfit.variable}`}>
         <main
           className={cn(

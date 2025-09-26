@@ -15,7 +15,7 @@ const HeroTexts = () => {
       </h3>
       <h1 className="font-outfit text-8xl name_underline text-primary max-sm:text-5xl max-sm:text-center font-bold max-sm:leading-tight">
         {firstName} {middleName} <br className="max-sm:hidden" />
-        <span className="max-sm:block">{lastName}</span>
+        {/* <span className="max-sm:block">{lastName}</span> */}
         <span className="max-sm:hidden"> {lastName} .</span>
       </h1>
       <TextRotator />

@@ -10,6 +10,7 @@ import {
   MoreHorizontal,
   User,
   Award,
+  Briefcase
 } from "lucide-react";
 
 import {
@@ -39,6 +40,11 @@ const Navbar = () => {
       title: "Skills",
       icon: <LightbulbIcon className="h-full w-full " />,
       href: "/skills",
+    },
+    {
+      title: "Experience",
+      icon: <Briefcase className="h-full w-full " />,
+      href: "/experience",
     },
     {
       title: "Certificates",

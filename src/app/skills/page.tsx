@@ -16,7 +16,7 @@ const skillPage = () => {
           My Skills
         </Badge>
         <div className="flex flex-col gap-3">
-          <Heading>My Technical Experience/Skills.</Heading>
+          <Heading>My Technical Skills</Heading>
           <FramerWrapper y={0} x={200}>
             <p className="font-inter text-xl w-full text-primary max-sm:text-lg">
               Currently i am a fresher and i have a solid understand of HTML5,
