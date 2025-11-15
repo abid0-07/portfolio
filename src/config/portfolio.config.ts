@@ -65,7 +65,6 @@ export const portfolioConfig = {
       "Watching Anime",
       "Reading/Writing Tech Blogs",
       "Reading Books",
-      "Creating Projects",
     ],
     personalInfo: {
       language: "English, Bengali",
@@ -78,6 +77,7 @@ export const portfolioConfig = {
   skills: {
     roles: [
       "Student",
+      "Learner",
       "Researcher",
       "Gamer",
       "Creator",
@@ -307,45 +307,45 @@ export const portfolioConfig = {
         "https://www.coursera.org/account/accomplishments/specialization/L2MF2U97QZCN",
       skills: ["Neural Network", "Optimization"],
     },
-    {
-      title: "Full Stack Developer",
-      issuer: "Microsoft",
-      issueDate: "Ongoing",
-      description:
-        "Comprehensive course basic to advanced concepts of full stack development, including front-end and back-end technologies in C# and ASP.NET.",
-      credentialUrl:
-        "https://university.mongodb.com/course_completion/your-certificate-id",
-      skills: [
-        "C#",
-        "ASP.NET",
-        "Blazor",
-        "Database",
-        "Optimization",
-        "Scalability",
-        "Data Structure",
-        "Algorithms",
-        "Deployment",
-        "DevOps",
-      ],
-    },
-    {
-      title: "IBM Full-Stack JavaScript Developer Professional Certificate",
-      issuer: "IBM",
-      issueDate: "Ongoing",
-      description:
-        "full-stack development skills like React, Node.js, and DevOps to build and deploy cloud-native applications",
-      credentialUrl:
-        "https://university.mongodb.com/course_completion/your-certificate-id",
-      skills: [
-        "React",
-        "JavaScript",
-        "Node.js",
-        "DevOps",
-        "Docker",
-        "Kubernetes",
-        "NoSQL",
-      ],
-    },
+    // {
+    //   title: "Full Stack Developer",
+    //   issuer: "Microsoft",
+    //   issueDate: "Ongoing",
+    //   description:
+    //     "Comprehensive course basic to advanced concepts of full stack development, including front-end and back-end technologies in C# and ASP.NET.",
+    //   credentialUrl:
+    //     "https://university.mongodb.com/course_completion/your-certificate-id",
+    //   skills: [
+    //     "C#",
+    //     "ASP.NET",
+    //     "Blazor",
+    //     "Database",
+    //     "Optimization",
+    //     "Scalability",
+    //     "Data Structure",
+    //     "Algorithms",
+    //     "Deployment",
+    //     "DevOps",
+    //   ],
+    // },
+    // {
+    //   title: "IBM Full-Stack JavaScript Developer Professional Certificate",
+    //   issuer: "IBM",
+    //   issueDate: "Ongoing",
+    //   description:
+    //     "full-stack development skills like React, Node.js, and DevOps to build and deploy cloud-native applications",
+    //   credentialUrl:
+    //     "https://university.mongodb.com/course_completion/your-certificate-id",
+    //   skills: [
+    //     "React",
+    //     "JavaScript",
+    //     "Node.js",
+    //     "DevOps",
+    //     "Docker",
+    //     "Kubernetes",
+    //     "NoSQL",
+    //   ],
+    // },
   ],
 
   // Projects Information
