@@ -19,7 +19,7 @@ export default function Home() {
           <div className="h-fit w-full p-4 flex gap-4 max-lg:justify-center max-sm:p-2 max-sm:justify-center">
             <SocialLinks />
           </div>
-          <DownLoadResumeBtn />
+          {/* <DownLoadResumeBtn /> */}
         </FramerWrapper>
         {/* RIGHT SIDE image  */}
         <FramerWrapper
