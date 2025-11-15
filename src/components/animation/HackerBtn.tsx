@@ -27,7 +27,8 @@ const HackerBtn = ({ label }: { label: string }) => {
     try {
       // You can replace this with the actual path to your CV file
       // For now, we'll create a placeholder functionality
-      const cvUrl = "/resume.pdf"; // Add your CV file to the public folder
+      // const cvUrl = "/resume.pdf"; // Add your CV file to the public folder
+      const cvUrl = "/";
       const link = document.createElement("a");
       link.href = cvUrl;
       link.download = "CV-Portfolio.pdf";
