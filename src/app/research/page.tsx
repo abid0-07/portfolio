@@ -12,7 +12,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { ExternalLink, FlaskConical, Book } from "lucide-react";
+import { ExternalLink, Book } from "lucide-react";
 import Link from "next/link";
 import { portfolioConfig } from "@/config/portfolio.config";
 
