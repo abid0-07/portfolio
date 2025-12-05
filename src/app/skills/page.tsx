@@ -68,6 +68,14 @@ const skillPage = () => {
               <SkillsFooter items={portfolioConfig.skills.ml} />
             </div>
           </FramerWrapper>
+          <FramerWrapper className="block w-full" y={100} delay={0.34}>
+            <h1 className="gap-2 text-2xl font-outfit text-primary font-semibold flex text-underline relative max-sm:text-xl mb-4">
+              Cyber Security
+            </h1>
+            <div className="w-full grid grid-cols-7 max-lg:grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4">
+              <SkillsFooter items={portfolioConfig.skills.cyber} />
+            </div>
+          </FramerWrapper>
         </div>
       </div>
     </ScrollContainer>

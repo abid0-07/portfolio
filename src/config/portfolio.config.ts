@@ -213,6 +213,33 @@ export const portfolioConfig = {
         icon: "/colab.svg", // a local icon for google looker
       },
     ],
+    cyber: [
+      {
+        name: "Kali Linux",
+        icon: "/icons/kali.svg",
+      },
+      {
+        name: "Parrot OS",
+        icon: "/icons/parrot.svg",
+      },
+
+      {
+        name: "Burpsuite",
+        icon: "/icons/burp.svg",
+      },
+      {
+        name: "Metasploit",
+        icon: "/icons/metasploit.svg",
+      },
+      {
+        name: "Nmap",
+        icon: "/icons/nmap.svg",
+      },
+      {
+        name: "Wireshark",
+        icon: "/icons/wireshark.svg",
+      },
+    ],
   },
 
   // Education Information
