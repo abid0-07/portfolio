@@ -1,7 +1,7 @@
 import FramerWrapper from "@/components/animation/FramerWrapper";
 import Heading from "@/components/Heading";
 import { Badge } from "@/components/ui/badge";
-import { Briefcase } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 import { portfolioConfig } from "@/config/portfolio.config";
 
 const educationPage = () => {
@@ -9,7 +9,7 @@ const educationPage = () => {
     // ABOUT PAGE
     <div className="h-full w-full relative flex flex-col items-start gap-5 overflow-hidden px-4 max-sm:px-2">
       <Badge variant="secondary" className="gap-1.5 py-1 max-sm:text-xs">
-        <Briefcase className="h-4 w-4 max-sm:h-3 max-sm:w-3" />
+        <GraduationCap className="h-4 w-4 max-sm:h-3 max-sm:w-3" />
         Education
       </Badge>
       <div className="flex flex-col gap-3">

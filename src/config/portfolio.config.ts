@@ -6,7 +6,7 @@ export const portfolioConfig = {
   location: "Dhaka, Bangladesh",
 
   // Contact Information
-  email: "abdullah.abid.se@gmail.com", // Replace with actual email if available
+  email: "abdullah.abid.se@gmail.com", //
 
   // Social Media Links
   socialLinks: {
@@ -18,8 +18,7 @@ export const portfolioConfig = {
 
   // SEO Information
   seo: {
-    ogImage: "https://www.abdullahalabid.in//og-image.png",
-    url: "https://www.abdullahalabid.in/", // This will be your actual Vercel URL
+    url: "https://portfolio-abid0-07s-projects.vercel.app/", // This will be your actual Vercel URL
     twitterHandle: "@abid_0306",
     keywords: [
       "Abdullah Al Abid",
@@ -47,6 +46,8 @@ export const portfolioConfig = {
       "abdullah abid portfolio",
       "@abid_0306",
       "github.com/abid0-07",
+      "cybersecurity enthusiast",
+      "soc analyst",
     ],
     authors: [
       {
@@ -63,7 +64,7 @@ export const portfolioConfig = {
       "Coding",
       "Playing Games",
       "Watching Anime",
-      "Reading/Writing Tech Blogs",
+      "Reading Tech Blogs",
       "Reading Books",
     ],
     personalInfo: {
@@ -85,14 +86,6 @@ export const portfolioConfig = {
     ],
     // Technical Skills
     programmingLanguages: [
-      {
-        name: "HTML5",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-      },
-      {
-        name: "CSS3",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-      },
       {
         name: "JavaScript",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
@@ -228,9 +221,11 @@ export const portfolioConfig = {
       degree: "Bachelor of Software Engineering",
       institution: "Daffodil International University",
       location: "Daffodil Smart City, Birulia, Savar, Dhaka, Bangladesh",
-      period: "July 2021 - 2025",
-      description:
-        "I am currently Studying Bachelor of Software Engineering form Daffodil International University, one of the leading private university of Bangladesh. The program has provided me with a well-rounded education, covering both theoretical foundations and practical applications of Software Engineering.",
+      period: "September 2021 - August 2025",
+      description: `During my undergraduate studies, I built a strong foundation in software development, system design, and data-driven problem-solving.
+      My coursework covered key subjects such as Data Structures & Algorithms, Object-Oriented Programming, Databases, Web Application Development, Design Pattern, Software Architecture & Design, Artificial Intelligence, Software Quality Assurance & Testing, Software Project Management & Documentation, 
+      Machine Learning, Human-Computer Interaction, and Data Mining.
+      Throughout the program, I worked on real-world projects, research activities, and team-based software development, gaining hands-on experience in building scalable and user-focused applications.`,
     },
   ],
 
@@ -241,6 +236,23 @@ export const portfolioConfig = {
       period: "September 2025- Present",
       description:
         "Working as Executive - Information Security at Nagad Ltd. In this role, I am responsible for ensuring the security and integrity of the organization's information systems. My duties include monitoring network activity, conducting security assessments, and implementing security protocols to protect against cyber threats. I collaborate with cross-functional teams to develop and enforce security policies, provide training to staff on best practices, and respond to security incidents promptly. My goal is to safeguard sensitive data and maintain the trust of our customers and stakeholders.",
+    },
+  ],
+
+  research: [
+    {
+      title: "Fundamentals of Machine Learning in Neurology",
+      author: "Md Rittique Alam & Abdullah Al Abid ",
+      year: "01 November 2025",
+      tags: [
+        "Machine Learning",
+        "Motor neuron disease",
+        "Neurological models",
+        "Neurology",
+        "Neurological Disorders",
+        "Predictive medicine",
+      ],
+      link: "https://link.springer.com/chapter/10.1007/978-3-032-04315-3_2#chapter-info",
     },
   ],
 

@@ -2,15 +2,15 @@ import ContactForm from "@/components/ContactForm";
 import FramerWrapper from "@/components/animation/FramerWrapper";
 import Heading from "@/components/Heading";
 import { Badge } from "@/components/ui/badge";
-import { Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 
 const contactPage = () => {
   return (
     // PROJECT PAGE
     <div className="h-full w-full relative flex flex-col items-start gap-5 overflow-hidden px-4 max-sm:px-2">
       <Badge variant="secondary" className="gap-1.5 py-1 max-sm:text-xs">
-        <Phone className="h-4 w-4 max-sm:h-3 max-sm:w-3" />
-        Contact Us
+        <Mail className="h-4 w-4 max-sm:h-3 max-sm:w-3" />
+        Contact Me
       </Badge>
       <div className="flex flex-col gap-3 w-full">
         <Heading>Contact Me!</Heading>

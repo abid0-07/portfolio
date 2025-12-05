@@ -4,14 +4,14 @@ import Heading from "@/components/Heading";
 import FramerWrapper from "@/components/animation/FramerWrapper";
 import ScrollContainer from "@/components/ScrollContainer";
 import { Badge } from "@/components/ui/badge";
-import { Book } from "lucide-react";
+import { Award } from "lucide-react";
 
 const CertificatesPage = () => {
   return (
     <ScrollContainer>
       <div className="h-full w-full relative overflow-auto">
         <Badge variant="secondary" className="gap-1.5 py-1 max-sm:text-xs">
-          <Book className="w-4 h-4 max-sm:w-3 max-sm:h-3" />
+          <Award className="w-4 h-4 max-sm:w-3 max-sm:h-3" />
           Certificates
         </Badge>
         {/* Header */}
