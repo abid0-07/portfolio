@@ -221,38 +221,49 @@ html {
 
 /* TEXT ROTATOR STYLES  */
 .animate-text-slide {
-  animation: text-slide 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite;
+  animation: text-slide 12s cubic-bezier(0.83, 0, 0.17, 1) infinite;
 }
 
 @keyframes text-slide {
 
   0%,
-  16% {
+  10% {
     transform: translateY(0%);
   }
 
-  20%,
-  36% {
+  /* 1st text */
+  16%,
+  26% {
     transform: translateY(-16.66%);
   }
 
-  40%,
-  56% {
+  /* 2nd */
+  33%,
+  43% {
     transform: translateY(-33.33%);
   }
 
-  60%,
-  76% {
+  /* 3rd */
+  50%,
+  60% {
     transform: translateY(-50%);
   }
 
-  80%,
-  96% {
+  /* 4th */
+  66%,
+  76% {
     transform: translateY(-66.66%);
   }
 
-  100% {
+  /* 5th */
+  83%,
+  93% {
     transform: translateY(-83.33%);
+  }
+
+  /* 6th */
+  100% {
+    transform: translateY(-100%);
   }
 }
 
