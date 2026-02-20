@@ -59,7 +59,7 @@ export const portfolioConfig = {
 
   // About Information
   about: {
-    bio: "I am a Full Stack Web Developer, ML & Cyber Security Enthusiast and Researcher from Dhaka, Bangladesh. I'm passionate about crafting web projects and contributing to communities. I specialize in modern JavaScript frameworks and responsive CSS design, focusing on creating user-friendly interfaces. With strong attention to detail and efficient delivery, I build seamless web experiences that combine functionality with elegant design.",
+    bio: "I’m Abdullah Al Abid, an Information Security Executive with a strong technical background in web development, software engineering, and data-driven solutions. Currently, I work as part of a team of security professionals to address and mitigate cybersecurity challenges in Mobile Financial Services (MFS). My technical expertise includes JavaScript, TypeScript, and modern web technologies, with a focus on building clean, scalable, and efficient applications. I also have hands-on experience with Java, Python, and C#, which I’ve used for developing robust software solutions and exploring machine learning applications. I am comfortable working with databases such as MongoDB, SQL, and Prisma, enabling me to design reliable and high-performance data systems. Beyond development, I have a strong interest in data analysis and analytics. I’ve applied statistical and analytical techniques to extract meaningful insights from data and enjoy creating impactful visual narratives using tools like Google Looker Studio and IBM Cognos Analytics. Additionally, I have worked on machine learning projects including protein prediction and heart disease prediction. Currently, I am deepening my expertise in cybersecurity, with a particular focus on application security, information security practices, and protecting digital financial platforms. Driven by curiosity and a continuous learning mindset, I am always eager to explore emerging technologies, solve real-world problems, and create meaningful impact through secure and innovative solutions.",
     hobbies: [
       "Coding",
       "Playing Games",
@@ -261,8 +261,9 @@ export const portfolioConfig = {
       company: "Nagad Ltd",
       position: "Executive - Information Security",
       period: "September 2025- Present",
-      description:
-        "Working as Executive - Information Security at Nagad Ltd. In this role, I am responsible for ensuring the security and integrity of the organization's information systems. My duties include monitoring network activity, conducting security assessments, and implementing security protocols to protect against cyber threats. I collaborate with cross-functional teams to develop and enforce security policies, provide training to staff on best practices, and respond to security incidents promptly. My goal is to safeguard sensitive data and maintain the trust of our customers and stakeholders.",
+      description: `Working as Executive – Information Security at Nagad Ltd., I am responsible for ensuring the security, availability, and integrity of the organization’s DFS systems. 
+        My duties include continuous firewall monitoring and reporting, analyzing logs, identifying suspicious activities, and escalating potential threats to maintain a strong security posture. I coordinate with third-party vendors to conduct Vulnerability Assessment and Penetration Testing (VAPT) on DFS systems, track remediation progress, and share detailed reports with relevant stakeholders. I also handle IP whitelisting requests and software installation request on the server, ensuring proper validation, risk assessment, and secure implementation according to policy guidelines. Additionally, I manage and coordinate security-related requests from other internal teams, ensuring timely support while maintaining compliance with organizational security standards. 
+        My goal is to strengthen the organization’s defense mechanisms, ensure regulatory compliance, and proactively reduce security risks across systems and wwwwwwwwwwwwwwwwwwwwoperations.`,
     },
   ],
 
@@ -285,6 +286,66 @@ export const portfolioConfig = {
 
   // Certificates Information
   certificates: [
+    {
+      title: "Cyber Security 101",
+      issuer: "TryHackMe",
+      issueDate: "December 2025",
+      description:
+        "Comprehensive multi-course series from basic to advanced concepts of cyber security, including blue team and red-team work process and these team work together.",
+      credentialUrl:
+        "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-WNRS94PH40.pdf",
+      skills: [
+        "Networking & Protocol Analysis",
+        "OS Fundamentals",
+        "Command Line Usage",
+        "Cryptography",
+        "Web Application Security",
+        "Exploitation & Tooling",
+        "Security Operations",
+        "Security Solutions & Tools",
+        "Digital Forensics & Malware Analysis",
+        "Credential Security",
+      ],
+    },
+    {
+      title: "Web Fundamentals",
+      issuer: "TryHackMe",
+      issueDate: "January, 2026",
+      description:
+        "Comprehensive multi-course series with basic to advanced concepts of website fundamentals. This includes how websites works, how they are structured and where the vulnerability usually occurs.",
+      credentialUrl:
+        "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-IWVGZQGBJI.pdf",
+      skills: [
+        "DNS",
+        "Content Discovery",
+        "Subdomain Enumeration",
+        "IDOR",
+        "File Inclusion",
+        "SSRF",
+        "XSS",
+        "Race Condition",
+        "Burp Suite",
+        " OWASP Top 10",
+      ],
+    },
+    {
+      title: "Jr Penetration Tester",
+      issuer: "TryHackMe",
+      issueDate: "January, 2026",
+      description:
+        "Comprehensive multi-course series for basic to advanced concepts of penetration testing and vulnerability assessment.",
+      credentialUrl:
+        "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-F08DO2O50Q.pdf",
+      skills: [
+        "Penetration Testing Methodology",
+        "Web Application Penetration Testing",
+        "Burp Suite",
+        "Network Security & Reconnaissance",
+        "Vulnerability Research",
+        "Metasploit Framework",
+        "Privilege Escalation",
+      ],
+    },
     {
       title: "IBM Data Science",
       issuer: "IBM",
@@ -345,6 +406,7 @@ export const portfolioConfig = {
         "https://www.coursera.org/account/accomplishments/specialization/L2MF2U97QZCN",
       skills: ["Neural Network", "Optimization"],
     },
+
     // {
     //   title: "Full Stack Developer",
     //   issuer: "Microsoft",

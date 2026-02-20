@@ -19,19 +19,26 @@ const skillPage = () => {
           <Heading>My Technical Skills</Heading>
           <FramerWrapper y={0} x={200}>
             <p className="font-inter text-xl w-full text-primary max-sm:text-lg">
-              Currently i am a fresher and i have a solid understand of HTML5,
-              CSS3, JS, TS and React, including responsive design principles. I
-              specialize in building web applications and sites using
-              Javascript, Typescript, React, Nextjs & Node. I also have a solid
-              understanding of SQL and have experience working with databases
-              such as MySQL and MongoDB. Machine Learning is one of my favorite
-              field and I have a solid understanding of ML concepts and
-              algorithms, including supervised and unsupervised learning, neural
-              networks, and natural language processing. I have experience with
-              popular ML frameworks such as TensorFlow and Keras. I am also
-              familiar with data preprocessing techniques, feature engineering,
-              and model evaluation metrics. I am always eager to learn new
-              technologies and improve my skills.
+              I have a solid understanding of HTML5, CSS3, JavaScript,
+              TypeScript, and React, including responsive design principles. I
+              specialize in building modern web applications using JavaScript,
+              TypeScript, React, Next.js, Node.js, and Express, following clean
+              architecture and scalable design practices. I also have a strong
+              foundation in databases, with hands-on experience working with
+              MySQL and MongoDB, and a good understanding of SQL. Machine
+              Learning and AI are among my favorite fields. I have a solid
+              understanding of ML concepts and algorithms, including supervised
+              and unsupervised learning, neural networks, and natural language
+              processing. I have practical experience using frameworks such as
+              TensorFlow, Keras, and PyTorch, along with data preprocessing,
+              feature engineering, model evaluation, and research-oriented
+              experimentation. In addition, I am developing my skills in Cyber
+              Security, including web application security, vulnerability
+              assessment, and basic penetration testing concepts. I am familiar
+              with security tools and best practices to build safer and more
+              robust systems. I am always eager to learn new technologies,
+              explore advanced concepts, and continuously improve my technical
+              and problem-solving skills.
             </p>
           </FramerWrapper>
           <FramerWrapper y={100} delay={0.3} className="block w-full">
@@ -54,6 +61,14 @@ const skillPage = () => {
           </FramerWrapper>
           <FramerWrapper className="block w-full" y={100} delay={0.34}>
             <h1 className="gap-2 text-2xl font-outfit text-primary font-semibold flex text-underline relative max-sm:text-xl mb-4">
+              Cyber Security
+            </h1>
+            <div className="w-full grid grid-cols-7 max-lg:grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4">
+              <SkillsFooter items={portfolioConfig.skills.cyber} />
+            </div>
+          </FramerWrapper>
+          <FramerWrapper className="block w-full" y={100} delay={0.34}>
+            <h1 className="gap-2 text-2xl font-outfit text-primary font-semibold flex text-underline relative max-sm:text-xl mb-4">
               Tools & Technologies
             </h1>
             <div className="w-full grid grid-cols-7 max-lg:grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4">
@@ -66,14 +81,6 @@ const skillPage = () => {
             </h1>
             <div className="w-full grid grid-cols-7 max-lg:grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4">
               <SkillsFooter items={portfolioConfig.skills.ml} />
-            </div>
-          </FramerWrapper>
-          <FramerWrapper className="block w-full" y={100} delay={0.34}>
-            <h1 className="gap-2 text-2xl font-outfit text-primary font-semibold flex text-underline relative max-sm:text-xl mb-4">
-              Cyber Security
-            </h1>
-            <div className="w-full grid grid-cols-7 max-lg:grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4">
-              <SkillsFooter items={portfolioConfig.skills.cyber} />
             </div>
           </FramerWrapper>
         </div>

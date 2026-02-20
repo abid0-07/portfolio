@@ -17,7 +17,7 @@ const CertificatesPage = () => {
         {/* Header */}
         <FramerWrapper y={0} scale={0.8}>
           <div className="flex flex-col gap-3">
-            <Heading>Certificates</Heading>
+            <Heading>Courses & Certificates</Heading>
           </div>
           <div className="flex flex-col items-center justify-center py-8 max-sm:py-6 px-4 max-sm:px-2">
             <p className="text-lg text-gray-600 dark:text-gray-400 text-center max-w-2xl font-inter max-sm:text-base max-sm:max-w-sm">
